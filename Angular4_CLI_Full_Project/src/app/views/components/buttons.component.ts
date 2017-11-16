@@ -5,6 +5,16 @@ import { Component } from '@angular/core';
 })
 export class ButtonsComponent {
 
+  showLoading: boolean = false;
+
   constructor() { }
+
+  submitAction() {
+    this.showLoading = true;
+
+    setTimeout( () => {
+      this.showLoading = false;
+    }, 1000);
+  }
 
 }

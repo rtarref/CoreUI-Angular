@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
@@ -24,6 +25,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
 
 @NgModule({
   imports: [
+    CommonModule,
     ComponentsRoutingModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
